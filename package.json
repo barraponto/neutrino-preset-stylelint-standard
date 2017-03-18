@@ -16,7 +16,7 @@
   "bugs": "https://github.com/barraponto/neutrino-preset-stylelint-standard/issues",
   "license": "GPL-3.0",
   "dependencies": {
-    "neutrino-preset-stylelint": "^1.0.0",
+    "neutrino-preset-stylelint": "^1.1.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "devDependencies": {
