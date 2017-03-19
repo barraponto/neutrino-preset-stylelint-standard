@@ -313,6 +313,10 @@ dedent@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.6.0.tgz#0e6da8f0ce52838ef5cec5c8f9396b0c1b64a3cb"
 
+deepmerge@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.3.2.tgz#1663691629d4dbfe364fa12a2a4f0aa86aa3a050"
+
 detect-file@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/detect-file/-/detect-file-0.1.0.tgz#4935dedfd9488648e006b0129566e9386711ea63"
@@ -926,9 +930,9 @@ mute-stream@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.6.tgz#48962b19e169fd1dfc240b3f1e7317627bbc47db"
 
-neutrino-preset-stylelint@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/neutrino-preset-stylelint/-/neutrino-preset-stylelint-1.0.0.tgz#fd1a719ebde88591d526c4958694a4476be076ae"
+neutrino-preset-stylelint@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/neutrino-preset-stylelint/-/neutrino-preset-stylelint-1.1.0.tgz#6a7df1fd1e01ece25cb7473712b3a19b08851a26"
   dependencies:
     stylelint-webpack-plugin "^0.7.0"
 
