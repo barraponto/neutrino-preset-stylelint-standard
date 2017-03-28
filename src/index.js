@@ -1,14 +1,10 @@
-const merge = require('deepmerge');
-const stylelintPreset = require('neutrino-preset-stylelint');
+const stylelint = require('neutrino-middleware-stylelint');
+const STYLELINT_CONFIG_STANDARD = require.resolve('stylelint-config-standard');
 
 module.exports = (neutrino) => {
-  stylelintPreset(neutrino);
-  neutrino.config
-    .plugin('stylelint')
-    .inject((Plugin, options) => new Plugin(merge({
-      config: {
-        extends: require.resolve('stylelint-config-standard'),
-      },
-    // let any configuration.extends overwrite our standard preset.
-    }, options)));
+  neutrino.use(stylelint, {
+    config: {
+      extends: STYLELINT_CONFIG_STANDARD
+    }
+  })
 };

@@ -1,5 +1,6 @@
 # Neutrino preset with Stylelint Standard configuration
-[![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Join Slack][slack-image]][slack-url]
+[![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
+[![Join Slack][slack-image]][slack-url]
 
 `neutrino-preset-stylelint-standard` is a Neutrino preset that adds
 [Stylelint][stylelint] support with pre-configured
@@ -11,35 +12,37 @@ Install this preset to your development dependencies, then set it in
 `package.json`:
 
 ```json
-  "config": {
-    "presets": [
+  "neutrino": {
+    "use": [
       "neutrino-preset-stylelint-standard"
     ]
-  },
+  }
 ```
 
-You can add extra rules in either `stylelint.config.js` or `package.json` like
-this:
+The configuration will be picked up like any regular Stylelint project (see
+[Styelint configuration documentation][stylelint-config-docs]). For example,
+You can add extra rules in `package.json` like this:
 
 ```json
-"config": {
   "stylelint": {
     rules: {
       "selector-attribute-quotes": "always"
-    },
+    }
   },
-  "presets": [
-    "neutrino-preset-stylelint",
-  ]
-},
+  "neutrino": {
+    "use": [
+      "neutrino-preset-stylelint-standard"
+    ]
+  }
 ```
 
 **BEWARE**: setting `extends` in the configuration will **overwrite** our
 standard config.
 
-## To Do
+## Neutrino 4
 
-- [ ] Support Neutrino 5.
+Neutrino v4 is supported by the earlier release of this preset.
+Please consider updating to Neutrino 5.
 
 [stylelint]: https://stylelint.io/
 [stylelint-config-docs]: https://stylelint.io/user-guide/configuration/
