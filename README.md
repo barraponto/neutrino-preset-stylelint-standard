@@ -9,40 +9,16 @@
 ## Documentation
 
 Install this preset to your development dependencies, then set it in
-`package.json`:
+`.neutrinorc.js`:
 
-```json
-  "neutrino": {
-    "use": [
+```js
+  module.exports = {
+    use: [
       "neutrino-preset-stylelint-standard"
     ]
   }
 ```
 
-The configuration will be picked up like any regular Stylelint project (see
-[Styelint configuration documentation][stylelint-config-docs]). For example,
-You can add extra rules in `package.json` like this:
-
-```json
-  "stylelint": {
-    rules: {
-      "selector-attribute-quotes": "always"
-    }
-  },
-  "neutrino": {
-    "use": [
-      "neutrino-preset-stylelint-standard"
-    ]
-  }
-```
-
-**BEWARE**: setting `extends` in the configuration will **overwrite** our
-standard config.
-
-## Neutrino 4
-
-Neutrino v4 is supported by the earlier release of this preset.
-Please consider updating to Neutrino 5.
 
 [stylelint]: https://stylelint.io/
 [stylelint-config-docs]: https://stylelint.io/user-guide/configuration/
