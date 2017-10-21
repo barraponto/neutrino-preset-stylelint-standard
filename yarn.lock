@@ -2841,9 +2841,9 @@ neutrino-middleware-eslint@^7.2.1:
     lodash.clonedeep "^4.5.0"
     ramda "^0.24.1"
 
-neutrino-middleware-stylelint@4.0.0-rc.1:
-  version "4.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/neutrino-middleware-stylelint/-/neutrino-middleware-stylelint-4.0.0-rc.1.tgz#f2f9e4efb5e13e3007ed8cc0f63df1dbece74583"
+neutrino-middleware-stylelint@4.0.0-rc.2:
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/neutrino-middleware-stylelint/-/neutrino-middleware-stylelint-4.0.0-rc.2.tgz#b7bcca8b7d0d8b455effc8f8e43d4729f0a7d087"
   dependencies:
     deepmerge "^1.4.4"
     stylelint-webpack-plugin "^0.8.0"
@@ -4026,9 +4026,15 @@ stylehacks@^2.3.0:
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
 
-stylelint-config-standard@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-16.0.0.tgz#bb7387bff1d7dd7186a52b3ebf885b2405d691bf"
+stylelint-config-recommended@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-1.0.0.tgz#752c17fc68fa64cd5e7589e24f6e46e77e14a735"
+
+stylelint-config-standard@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-17.0.0.tgz#42103a090054ee2a3dde9ecaed55e5d4d9d059fc"
+  dependencies:
+    stylelint-config-recommended "^1.0.0"
 
 stylelint-webpack-plugin@^0.8.0:
   version "0.8.0"
