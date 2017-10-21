@@ -19,6 +19,14 @@ Install this preset to your development dependencies, then set it in
   }
 ```
 
+## Changelog
+
+### 4.0.0
+
+- BREAK: updates to `stylelint-config-standard@17`, breaks custom at-rules by default.
+  See https://github.com/stylelint/stylelint-config-standard/blob/master/CHANGELOG.md#1700
+- CHORE: bumps to Neutrino 7, while still compatible with Neutrino 6
+
 
 [stylelint]: https://stylelint.io/
 [stylelint-config-docs]: https://stylelint.io/user-guide/configuration/
